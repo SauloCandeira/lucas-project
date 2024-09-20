@@ -171,24 +171,42 @@ section {
     color: #fff; /* Cor do texto ao passar o mouse */
 }
 
-.whatsapp-toggle {
-    position: fixed; /* Fixo na tela */
-    bottom: 20px; /* Distância do fundo */
-    right: 20px; /* Distância da direita */
-    background-color: #00fecb; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    border-radius: 50%; /* Círculo */
-    padding: 15px; /* Espaçamento interno */
-    font-size: 24px; /* Tamanho do ícone */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
-    text-align: center; /* Centraliza o texto */
-    transition: background 0.3s; /* Transição suave */
+.btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+/* .whatsapp-toggle {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #00fecb; 
+    color: #fff; 
+    border-radius: 50%; 
+    padding: 15px; 
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    text-align: center; 
+    transition: background 0.3s;
 }
 
 .whatsapp-toggle:hover {
-    background: #fff; /* Cor ao passar o mouse */
-    color: #00fecb; /* Cor do texto ao passar o mouse */
-}
+    background: #fff; 
+} */
 
 /* Estilos para mobile */
 @media (max-width: 768px) {
