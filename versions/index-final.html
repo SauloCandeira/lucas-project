@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança do Trabalho e Nobreak</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="https://i.postimg.cc/mg4rWBmv/logo.png" alt="Logo">
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-area">
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="welcome-text" id="welcome">
+        <h1>Segurança do Trabalho & <span>Eficiência</span></h1>
+        <p>Fornecemos soluções inovadoras em segurança e proteção.</p>
+        <a href="https://wa.me/5511999999999" class="contact-us-btn" target="_blank">Contact US</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma empresa especializada em Segurança do Trabalho e fornecimento de Nobreaks, oferecendo soluções inovadoras para garantir a segurança e eficiência do seu ambiente de trabalho.</p>
+        <i class="fas fa-shield-alt fa-2x"></i>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Serviços</h2>
+        <p>Oferecemos uma variedade de serviços para atender às suas necessidades de segurança e eficiência energética.</p>
+        <i class="fas fa-tools fa-2x"></i>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>Portfólio</h2>
+        <p>Veja alguns de nossos projetos anteriores e como ajudamos nossos clientes.</p>
+        <i class="fas fa-briefcase fa-2x"></i>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Entre em Contato</h2>
+        <p>Se você tem alguma dúvida ou gostaria de mais informações sobre nossos serviços, entre em contato conosco.</p>
+        <a href="https://wa.me/5511999999999" class="contact-btn" target="_blank">Formulário de Contato</a>
+    </section>
+
+    <a href="https://wa.me/5511999999999" class="whatsapp-toggle" target="_blank">📞</a>
+
+    <script>
+        // Script para ativar o menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navArea = document.querySelector('.nav-area');
+
+        menuToggle.addEventListener('click', () => {
+            navArea.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
