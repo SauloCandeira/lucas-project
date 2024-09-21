@@ -80,10 +80,6 @@ header {
     align-items: center;
     text-align: center; /* Centraliza o texto */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/seguranca-do-trabalho-2.jpg') no-repeat center center;
-
-    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./assets/seguranca-do-trabalho.jpeg') no-repeat center center; */
-    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://i.postimg.cc/qM5XNcq9/safety-work.jpg') no-repeat center center; */
-    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://i.postimg.cc/YjcJg24M/aa.jpg) no-repeat center center; / */
     background-size: cover; /* Cobertura total */
     padding-top: 80px; /* Adiciona espaço para o cabeçalho */
     animation: fadeIn 1s ease-in; /* Animação de entrada */
@@ -190,24 +186,6 @@ section {
     margin-top: 16px;
 }
 
-/* .whatsapp-toggle {
-    position: fixed; 
-    bottom: 20px; 
-    right: 20px; 
-    background-color: #00fecb; 
-    color: #fff; 
-    border-radius: 50%; 
-    padding: 15px; 
-    font-size: 24px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-    text-align: center; 
-    transition: background 0.3s;
-}
-
-.whatsapp-toggle:hover {
-    background: #fff; 
-} */
-
 /* Estilos para mobile */
 @media (max-width: 768px) {
     .nav-area {
@@ -238,20 +216,22 @@ section {
     }
 }
 
-
-
 .services {
     width: 100%;
+    height: auto; /* Ajustado para auto */
     padding: 60px 20px;
     background-color: #111; /* Fundo escuro */
     color: #fff;
     text-align: center;
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    flex-direction: column; /* Coluna para empilhamento vertical */
+    justify-content: center; /* Centraliza verticalmente */
 }
 
 .services h2 {
-    font-size: 36px;
-    color: #00fecb;
-    margin-bottom: 40px;
+    font-size: 36px; /* Tamanho do título */
+    margin-bottom: 40px; /* Maior espaço abaixo do título */
+    color: #00fecb; /* Cor do título */
 }
 
 .service-container {
@@ -305,8 +285,6 @@ section {
     transform: translateY(-10px); /* Elevação ao passar o mouse */
 }
 
-
-
 footer {
     width: 100%;
     background-color: #111; /* Fundo escuro */
@@ -348,7 +326,6 @@ footer .social-icons a {
 footer .social-icons a:hover {
     color: #00fecb; /* Cor ao passar o mouse sobre ícones sociais */
 }
-
 /* Estilos para mobile */
 @media (max-width: 768px) {
     footer p {
