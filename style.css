@@ -137,7 +137,7 @@ section {
     text-align: center;
 }
 
-.about, .contact {
+.about, .contact .services {
     width: 100%; /* Garante 100% de largura */
     height: 100vh; /* Garante 100% de altura */
 }
