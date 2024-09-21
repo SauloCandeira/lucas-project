@@ -190,6 +190,60 @@ section {
     margin-top: 16px;
 }
 
+footer {
+    width: 100%;
+    background-color: #111; /* Fundo escuro */
+    padding: 20px 0;
+    text-align: center;
+    color: #fff; /* Texto branco */
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+footer p a {
+    color: #00fecb; /* Cor dos links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer p a:hover {
+    color: #fff; /* Cor ao passar o mouse */
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #00fecb; /* Cor ao passar o mouse sobre ícones sociais */
+}
+
+/* Estilos para mobile */
+@media (max-width: 768px) {
+    footer p {
+        font-size: 12px; /* Tamanho menor em dispositivos móveis */
+    }
+
+    footer .social-icons a {
+        font-size: 18px; /* Ajuste no tamanho dos ícones */
+    }
+}
+
+
 /* .whatsapp-toggle {
     position: fixed; 
     bottom: 20px; 
@@ -236,6 +290,43 @@ section {
     .welcome-text p {
         font-size: 16px; /* Reduz tamanho do texto */
     }
+}
+
+
+/* Estilos para o Loading */
+#loading {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Oculta o conteúdo até o carregamento */
+body.loading {
+    overflow: hidden;
+    visibility: hidden;
+}
+
+body.loading #loading {
+    visibility: visible;
 }
 
 
@@ -303,59 +394,4 @@ section {
 
 .service-item:hover {
     transform: translateY(-10px); /* Elevação ao passar o mouse */
-}
-
-
-
-footer {
-    width: 100%;
-    background-color: #111; /* Fundo escuro */
-    padding: 20px 0;
-    text-align: center;
-    color: #fff; /* Texto branco */
-    position: relative;
-    bottom: 0;
-    left: 0;
-}
-
-footer p {
-    font-size: 14px;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-footer p a {
-    color: #00fecb; /* Cor dos links */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer p a:hover {
-    color: #fff; /* Cor ao passar o mouse */
-}
-
-footer .social-icons {
-    margin-top: 10px;
-}
-
-footer .social-icons a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 20px;
-    transition: color 0.3s ease;
-}
-
-footer .social-icons a:hover {
-    color: #00fecb; /* Cor ao passar o mouse sobre ícones sociais */
-}
-
-/* Estilos para mobile */
-@media (max-width: 768px) {
-    footer p {
-        font-size: 12px; /* Tamanho menor em dispositivos móveis */
-    }
-
-    footer .social-icons a {
-        font-size: 18px; /* Ajuste no tamanho dos ícones */
-    }
 }

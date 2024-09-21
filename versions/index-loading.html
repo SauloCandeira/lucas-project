@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança do Trabalho e Nobreak</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo do efeito de loading */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px); /* Aplicando o blur */
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido e transparente */
+            z-index: 9999;
+        }
+
+        #loading img {
+            width: 100px;
+            height: 100px;
+            filter: invert(1); /* Inverter a cor para branco */
+            animation: bounce 2s infinite; /* Animação simples para o capacete */
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Estilos para quando o loading desaparecer */
+        body.loading #content {
+            display: none;
+        }
+
+        body #loading {
+            display: none;
+        }
+    </style>
+</head>
+<body class="loading">
+    <!-- Elemento de Loading -->
+    <div id="loading">
+        <img src="/assets/capacete.png" alt="Capacete Segurança do Trabalho">
+    </div>
+
+    <!-- Conteúdo da página -->
+    <div id="content">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <img src="https://i.postimg.cc/mg4rWBmv/logo.png" alt="Logo">
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-area" id="navArea">
+                    <li><a href="#welcome">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                <!-- <li><a href="#portfolio">Portfólio</a></li> -->
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="welcome-text" id="welcome">
+            <h1>Segurança do Trabalho & <span>Eficiência</span></h1>
+            <p>Fornecemos soluções inovadoras em segurança e proteção.</p>
+            <a href="https://wa.me/5511996349477" class="contact-us-btn" target="_blank">Entrar em contato</a>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma empresa especializada em Segurança do Trabalho e fornecimento de Nobreaks, oferecendo soluções inovadoras para garantir a segurança e eficiência do seu ambiente de trabalho.</p>
+        </section>
+
+        <section class="services" id="services">
+            <h2>Nossos Serviços</h2>
+            <div class="service-container">
+                <div class="service-item">
+                    <img src="./assets/seguranca-do-trabalho-32.png" alt="Segurança do Trabalho">
+                    <h3>Segurança do Trabalho</h3>
+                    <p>Oferecemos soluções completas para garantir a segurança e a saúde dos trabalhadores em diferentes ambientes corporativos.</p>
+                    <!-- <a href="#" class="service-btn">Saiba Mais</a> -->
+                </div>
+                <div class="service-item">
+                    <img src="./assets/nobreak.png" alt="Nobreaks">
+                    <h3>Nobreaks</h3>
+                    <p>Nossos nobreaks de alta qualidade garantem energia contínua para equipamentos essenciais, protegendo contra quedas e surtos.</p>
+                    <!-- <a href="#" class="service-btn">Saiba Mais</a> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Entre em Contato</h2>
+            <p>Se você tem alguma dúvida ou gostaria de mais informações sobre nossos serviços, entre em contato conosco.</p>
+            <a href="https://wa.me/5511996349477" class="contact-btn" target="_blank">Formulário de Contato</a>
+        </section>
+
+        <a class="btn-whatsapp" href="https://wa.me/5511996349477" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+
+        <footer>
+            <!-- <p>&copy; 2024 Segurança do Trabalho e Nobreak. Todos os direitos reservados. Desenvolvido por <a href="https://github.com/seu-perfil" target="_blank">Seu Nome</a>.</p> -->
+            <p>&copy; 2024 Segurança do Trabalho e Nobreak. Todos os direitos reservados.</p> 
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Simula um atraso de 1 segundo para garantir que o loading seja exibido
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.body.classList.remove('loading');
+                document.getElementById('loading').style.display = 'none';
+            }, 1000); // Aguarda 1 segundo antes de remover o loading
+        });
+
+        // Lógica do menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navArea = document.getElementById('navArea');
+
+        menuToggle.addEventListener('click', () => {
+            navArea.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
