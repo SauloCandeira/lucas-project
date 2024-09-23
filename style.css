@@ -68,7 +68,7 @@ header {
 }
 
 .nav-area li a:hover {
-    color: #00fecb; /* Cor do texto ao passar o mouse */
+    color: #3998EA; /* Cor do texto ao passar o mouse */
 }
 
 .welcome-text {
@@ -96,7 +96,7 @@ header {
 }
 
 .welcome-text h1 span {
-    color: #00fecb;
+    color: #3998EA;
 }
 
 .welcome-text p {
@@ -117,7 +117,7 @@ header {
 }
 
 .contact-us-btn:hover {
-    background: #00fecb; /* Cor de fundo ao passar o mouse */
+    background: #3998EA; /* Cor de fundo ao passar o mouse */
     color: #333; /* Cor do texto ao passar o mouse */
 }
 
@@ -141,7 +141,7 @@ section {
 .about h2, .contact h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #00fecb; /* Cor do título */
+    color: #3998EA; /* Cor do título */
 }
 
 .about p, .contact p {
@@ -152,10 +152,10 @@ section {
 }
 
 .contact-us-btn, .contact-btn {
-    border: 2px solid #00fecb; /* Cor do contorno */
+    border: 2px solid #3998EA; /* Cor do contorno */
     background: transparent; /* Fundo transparente */
     padding: 10px 25px;
-    color: #00fecb;
+    color: #3998EA;
     text-decoration: none;
     display: inline-block;
     margin-top: 20px;
@@ -163,7 +163,7 @@ section {
 }
 
 .contact-us-btn:hover, .contact-btn:hover {
-    background: #00fecb; /* Cor de fundo ao passar o mouse */
+    background: #3998EA; /* Cor de fundo ao passar o mouse */
     color: #fff; /* Cor do texto ao passar o mouse */
 }
 
@@ -231,7 +231,7 @@ section {
 .services h2 {
     font-size: 36px; /* Tamanho do título */
     margin-bottom: 40px; /* Maior espaço abaixo do título */
-    color: #00fecb; /* Cor do título */
+    color: #3998EA; /* Cor do título */
 }
 
 .service-container {
@@ -268,16 +268,16 @@ section {
 }
 
 .service-btn {
-    border: 1px solid #00fecb;
+    border: 1px solid #3998EA;
     padding: 10px 20px;
-    color: #00fecb;
+    color: #3998EA;
     text-transform: uppercase;
     text-decoration: none;
     transition: background 0.3s, color 0.3s;
 }
 
 .service-btn:hover {
-    background: #00fecb;
+    background: #3998EA;
     color: #111;
 }
 
@@ -303,7 +303,7 @@ footer p {
 }
 
 footer p a {
-    color: #00fecb; /* Cor dos links */
+    color: #3998EA; /* Cor dos links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -324,7 +324,7 @@ footer .social-icons a {
 }
 
 footer .social-icons a:hover {
-    color: #00fecb; /* Cor ao passar o mouse sobre ícones sociais */
+    color: #3998EA; /* Cor ao passar o mouse sobre ícones sociais */
 }
 /* Estilos para mobile */
 @media (max-width: 768px) {

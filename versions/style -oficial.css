@@ -89,7 +89,7 @@ header {
 }
 
 .welcome-text h1 span {
-    color: #00fecb;
+    color: #3998EA;
 }
 
 .welcome-text p {
@@ -141,9 +141,9 @@ section {
 }
 
 .contact-btn {
-    border: 1px solid #00fecb;
+    border: 1px solid #3998EA;
     padding: 10px 20px;
-    color: #00fecb;
+    color: #3998EA;
     text-decoration: none;
     display: inline-block;
     margin-top: 20px;
