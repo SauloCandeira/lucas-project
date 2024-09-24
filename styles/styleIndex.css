@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #000;  */
+    color: #fff; /* Texto branco */
+    background: linear-gradient(to bottom, white, rgb(0, 100, 148));
+}
+
+section {
+    width: 100%;
+    height: calc(100vh - 80px); /* Altura da viewport menos a altura do cabeçalho */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to bottom, white, rgb(0, 100, 148));  */
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* section {
+    width: 100%;
+    height: calc(100vh - 80px)
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; 
+    padding-top: 80px; 
+    text-align: center;
+}
+ */
+
+/* Estilos para mobile */
+@media (max-width: 768px) {
+    .nav-area {
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column; /* Menu vertical */
+        position: absolute; /* Para sobrepor ao conteúdo */
+        background: rgba(0, 0, 0, 0.9); /* Fundo semitransparente */
+        top: 80px; /* Abaixo do cabeçalho */
+        right: 0;
+        width: 100%; /* Largura total */
+        padding: 20px; /* Espaçamento */
+    }
+
+    .nav-area.active {
+        display: flex; /* Exibe o menu quando ativo */
+    }
+
+    .menu-toggle {
+        display: flex; /* Exibe o menu toggle */
+    }
+
+    .welcome-text h1 {
+        font-size: 30px; /* Reduz tamanho da fonte */
+    }
+
+    .welcome-text p {
+        font-size: 16px; /* Reduz tamanho do texto */
+    }
+
+    section {
+        height: calc(100vh - 80px); /* Ajuste para mobile */
+    }
+}
+
+

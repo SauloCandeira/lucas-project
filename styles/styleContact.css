@@ -1,0 +1,50 @@
+
+.contact-us-btn {
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+    transition: background 0.3s, color 0.3s; /* Transição suave */
+}
+
+.contact-us-btn:hover {
+    background: #00fecb; /* Cor de fundo ao passar o mouse */
+    color: #333; /* Cor do texto ao passar o mouse */
+}
+
+.contact {
+    width: 100%; /* Garante 100% de largura */
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #00fecb; /* Cor do título */
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px; /* Limitar largura do texto */
+    line-height: 1.5; /* Melhor legibilidade */
+}
+
+.contact-us-btn, .contact-btn {
+    border: 2px solid #00fecb; /* Cor do contorno */
+    background: transparent; /* Fundo transparente */
+    padding: 10px 25px;
+    color: #00fecb;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background 0.3s, color 0.3s; /* Transição suave */
+}
+
+.contact-us-btn:hover, .contact-btn:hover {
+    background: #00fecb; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}

@@ -1,0 +1,67 @@
+header {
+    position: fixed; /* Cabeçalho fixo no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Altura do cabeçalho */
+    z-index: 1000; /* Para garantir que fique acima do conteúdo */
+    /* background: rgba(0, 0, 0, 0.8);  */
+    /* background: rgba(0, 100, 148, 0.8);  */
+    background:  #fff;
+    margin: 3px 0; /* Espaço 
+    /* background: linear-gradient(to bottom, white, rgb(0, 100, 148)); */
+
+
+
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: space-between; /* Espaça logo e menu */
+    align-items: center; /* Alinha verticalmente */
+    padding: 0 20px; /* Espaçamento horizontal */
+}
+
+.wrapper {
+    display: flex;
+    align-items: center; /* Centraliza logo e menu toggle */
+    width: 100%; /* Largura total */
+}
+
+.logo img {
+    max-height: 60px; /* Limita a altura da logo */
+}
+
+.menu-toggle {
+    display: none; /* Esconde o menu toggle por padrão */
+    flex-direction: column; /* Coluna para as barras */
+    cursor: pointer; /* Indica que é clicável */
+    margin-left: auto; /* Margem à esquerda para empurrar para a direita */
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 3px 0; /* Espaço entre as barras */
+}
+
+.nav-area {
+    list-style: none;
+    display: flex; /* Flex para o menu */
+    margin-left: auto; /* Espaço à esquerda para separar da logo */
+}
+
+.nav-area li {
+    margin: 0 15px; /* Espaçamento entre itens */
+}
+
+.nav-area li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s; /* Transição suave */
+}
+
+.nav-area li a:hover {
+    color: #3998EA; /* Cor do texto ao passar o mouse */
+}
