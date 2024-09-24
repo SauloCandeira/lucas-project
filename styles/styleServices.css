@@ -20,7 +20,8 @@ header {
     z-index: 1000; /* Para garantir que fique acima do conteúdo */
     /* background: rgba(0, 0, 0, 0.8);  */
     /* background: rgba(0, 100, 148, 0.8);  */
-    background: rgb(0, 100, 148);
+    background:  #fff;
+    margin: 3px 0; /* Espaço 
     /* background: linear-gradient(to bottom, white, rgb(0, 100, 148)); */
 
 
@@ -66,7 +67,7 @@ header {
 }
 
 .nav-area li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -162,13 +163,27 @@ section {
     height: 100vh; 
 } */
 
-.about h2, .contact h2 {
+.about h2 {
     font-size: 36px;
     margin-bottom: 20px;
     color: #3998EA; /* Cor do título */
 }
 
-.about p, .contact p {
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #cccccc; 
+}
+
+.contact p {
+    color: #cccccc; 
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px; /* Limitar largura do texto */
+    line-height: 1.5; /* Melhor legibilidade */
+}
+
+.about p {
     color: #3998EA;
     font-size: 18px;
     margin-bottom: 30px;
@@ -319,7 +334,7 @@ section {
 
 footer {
     width: 100%;
-    background-color: #111; /* Fundo escuro */
+    background-color: rgb(0, 100, 148)
     padding: 20px 0;
     text-align: center;
     color: #fff; /* Texto branco */
@@ -368,3 +383,23 @@ footer .social-icons a:hover {
         font-size: 18px; /* Ajuste no tamanho dos ícones */
     }
 }
+
+/* 
+.btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+} */
