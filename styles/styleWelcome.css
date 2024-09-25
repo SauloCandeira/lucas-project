@@ -6,9 +6,9 @@
     justify-content: center;
     align-items: center;
     text-align: center; /* Centraliza o texto */
-    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/seguranca-do-trabalho-2.jpg') no-repeat center center; */
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/image-1.jpg') no-repeat center center; /* Gradiente mais claro */
     background-size: cover; /* Cobertura total */
-    padding-top: 80px; /* Adiciona espaço para o cabeçalho */
+    padding-top: 0; /* Ajuste conforme necessário */
     animation: fadeIn 1s ease-in; /* Animação de entrada */
 }
 

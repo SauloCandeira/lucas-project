@@ -1,0 +1,78 @@
+.partners {
+    padding: 20px; /* Padding para a seção */
+    text-align: center;
+    background-color: #f4f4f4; /* Cor de fundo para a seção */
+    height: auto; /* Ajusta a altura da seção automaticamente */
+}
+
+.carousel {
+    position: relative;
+    width: 100%; /* A largura do carrossel é 100% da seção */
+    margin: 0 auto; /* Centraliza o carrossel */
+    overflow: hidden; /* Oculta os itens que estão fora do carrossel */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease; /* Transição suave ao mudar de imagem */
+    width: auto; /* A largura será ajustada automaticamente para os itens */
+}
+
+.carousel-item {
+    flex: 0 0 auto; /* Ajusta a largura com base no número de itens a serem exibidos */
+    height: auto; /* O item ocupa toda a altura do carrossel */
+    display: flex; /* Flexbox para centralizar a imagem */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px; /* Adiciona espaço entre os itens */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+.carousel-item img {
+    max-height: 150px; /* Limita a altura máxima da imagem */
+    width: 100%; /* Ajusta a largura para 100% do item */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Mantém a proporção da imagem sem distorções */
+}
+
+/* Estilos para responsividade */
+@media (max-width: 768px) {
+    .carousel-item {
+        flex: 0 0 100%; /* Cada item ocupa 100% da largura em dispositivos móveis */
+    }
+
+    .carousel-inner {
+        transition: none; /* Remove a transição em mobile para não afetar a experiência */
+    }
+}
+
+@media (min-width: 769px) {
+    .carousel-item {
+        flex: 0 0 25%; /* Cada item ocupa 25% da largura em desktops, ajuste conforme necessário */
+    }
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 15px; /* Aumenta o padding horizontal para melhor clique */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Escurece o fundo ao passar o mouse */
+}
+
+.carousel-control.prev {
+    left: 10px; /* Distância da borda esquerda */
+}
+
+.carousel-control.next {
+    right: 10px; /* Distância da borda direita */
+}
