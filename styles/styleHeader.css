@@ -1,3 +1,4 @@
+/* Estilos gerais do cabeçalho */
 header {
     position: fixed; /* Cabeçalho fixo no topo */
     top: 0;
@@ -5,14 +6,8 @@ header {
     width: 100%;
     height: 80px; /* Altura do cabeçalho */
     z-index: 1000; /* Para garantir que fique acima do conteúdo */
-    /* background: rgba(0, 0, 0, 0.8);  */
-    /* background: rgba(0, 100, 148, 0.8);  */
-    background:  #fff;
-    margin: 3px 0; /* Espaço 
-    /* background: linear-gradient(to bottom, white, rgb(0, 100, 148)); */
-
-
-
+    background: #fff;
+    margin: 3px 0; /* Espaço */
     display: flex; /* Flexbox para alinhamento */
     justify-content: space-between; /* Espaça logo e menu */
     align-items: center; /* Alinha verticalmente */
@@ -40,7 +35,6 @@ header {
     height: 3px;
     width: 25px;
     background-color: #000; /* Alterado para preto */
-    /* background-color: #fff; */
     margin: 3px 0; /* Espaço entre as barras */
 }
 
@@ -52,17 +46,68 @@ header {
 
 .nav-area li {
     margin: 0 15px; /* Espaçamento entre itens */
+    position: relative; /* Para posicionar a borda */
 }
 
 .nav-area li a {
-    color: #000000;
+    color: #000000; /* Cor padrão dos links */
     text-decoration: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-transform: uppercase;
+    padding: 10px 20px; /* Padding consistente para todos os links */
+    font-size: 16px; /* Tamanho da fonte consistente */
+    text-transform: uppercase; /* Letras maiúsculas */
     transition: color 0.3s; /* Transição suave */
+    border-radius: 5px; /* Arredonda os cantos */
 }
 
+/* Borda entre os itens do menu */
+.nav-area li:not(:last-child)::after {
+    content: ""; /* Cria um pseudo-elemento */
+    position: absolute;
+    right: -7.5px; /* Posição da borda */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px; /* Largura da borda */
+    height: 25px; /* Altura da borda */
+    background-color: #3998EA; /* Cor da borda */
+}
+
+/* Estilo para o hover do link */
 .nav-area li a:hover {
     color: #3998EA; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Mostra o toggle no mobile */
+    }
+    
+    .nav-area {
+        flex-direction: column; /* Coloca os itens em coluna */
+        position: absolute; /* Posiciona o menu */
+        top: 80px; /* Abaixo do cabeçalho */
+        left: 0;
+        width: 100%; /* Largura total */
+        background: #333; /* Fundo do menu */
+        display: none; /* Esconde o menu por padrão */
+    }
+
+    .nav-area.show {
+        display: flex; /* Mostra o menu quando ativo */
+    }
+
+    .nav-area li {
+        margin: 10px 0; /* Espaçamento vertical entre itens */
+        text-align: center; /* Centraliza os links */
+    }
+
+    .nav-area li a {
+        color: #ffffff; /* Letras brancas na versão mobile */
+        padding: 15px 20px; /* Aumenta o padding para todos os links */
+        transition: background-color 0.3s; /* Transição suave para o fundo */
+    }
+
+    .nav-area li a:hover {
+        background-color: #3998EA; /* Fundo ao passar o mouse */
+    }
 }
