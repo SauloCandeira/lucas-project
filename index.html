@@ -180,11 +180,9 @@ function moveSlide(step) {
 document.querySelector('.carousel-control.prev').addEventListener('click', () => moveSlide(-1));
 document.querySelector('.carousel-control.next').addEventListener('click', () => moveSlide(1));
 
-// Configurar intervalo automático
-setInterval(() => {
-    if (window.innerWidth >= 768) { // Mova automaticamente somente se estiver em desktop
-        moveSlide(1);
-    }
+// Configurar intervalo automático para todas as versões
+const autoSlideInterval = setInterval(() => {
+    moveSlide(1);
 }, 3000); // Muda a cada 3 segundos
 
 // Inicializar o carrossel mostrando os primeiros itens
