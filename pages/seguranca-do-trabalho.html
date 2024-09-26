@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços de Segurança Eletrônica</title>
-    <link rel="stylesheet" href="../styles//styleHeader.css">
     <link rel="stylesheet" href="./blog.css">
 </head>
 <body>
@@ -32,12 +31,11 @@
         </div>
     </header>
 
-
     <div class='content'>
         <section id="servicos" class="services-section">
             <div class="container">
                 <h2>Nossos Serviços</h2>
-                <div class="services-grid"> <!-- Contêiner para grid -->
+                <div class="services-grid">
                     <div class="service-card">
                         <h3>Câmeras de Vigilância</h3>
                         <p>Monitoramento em tempo real com câmeras de alta definição.</p>
@@ -71,6 +69,17 @@
             </div>
         </section>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navArea = document.querySelector('.nav-area');
+
+            menuToggle.addEventListener('click', function () {
+                navArea.classList.toggle('show'); // Adiciona ou remove a classe 'show'
+            });
+        });
+    </script>
     
 </body>
 </html>
