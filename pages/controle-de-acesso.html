@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços de Segurança Eletrônica</title>
-    <link rel="stylesheet" href="../styles//styleHeader.css">
+    <title>Serviços de Controle de Acesso</title>
     <link rel="stylesheet" href="./blog.css">
 </head>
 <body>
@@ -24,35 +23,34 @@
             <ul class="nav-area" id="navArea">
                 <li><a href="./instalacoes-eletricas.html">Instalações Elétricas</a></li>
                 <li><a href="./seguranca-do-trabalho.html">Segurança do Trabalho</a></li>
-                <li><a href="./automacao.html">Segurança Eletrônica</a></li>
-                <li><a href="./seguranca-eletronica.html">Automação</a></li>
-                <li><a href="./alarme-de-incendio.html">Controle de Acesso</a></li>
-                <li><a href="./controle-de-acesso.html">Alarme de Incêndio</a></li>
+                <li><a href="./automacao.html">Automação</a></li>
+                <li><a href="./seguranca-eletronica.html">Segurança Eletrônica</a></li>
+                <li><a href="./alarme-de-incendio.html">Alarme de Incêndio</a></li>
+                <li><a href="./controle-de-acesso.html">Controle de Acesso</a></li>
             </ul>
         </div>
     </header>
 
-
     <div class='content'>
         <section id="servicos" class="services-section">
             <div class="container">
-                <h2>Nossos Serviços</h2>
-                <div class="services-grid"> <!-- Contêiner para grid -->
+                <h2>Nossos Serviços de Controle de Acesso</h2>
+                <div class="services-grid">
                     <div class="service-card">
-                        <h3>Câmeras de Vigilância</h3>
-                        <p>Monitoramento em tempo real com câmeras de alta definição.</p>
+                        <h3>Gestão de Acesso</h3>
+                        <p>Implementação de sistemas que garantem que apenas pessoas autorizadas possam acessar áreas restritas.</p>
                     </div>
                     <div class="service-card">
-                        <h3>Alarmes</h3>
-                        <p>Alarmes de intrusão com resposta rápida.</p>
+                        <h3>Monitoramento em Tempo Real</h3>
+                        <p>Sistemas que permitem o monitoramento em tempo real das entradas e saídas, com alertas automáticos em caso de acesso não autorizado.</p>
                     </div>
                     <div class="service-card">
-                        <h3>Controle de Acesso</h3>
-                        <p>Sistemas de controle de acesso para segurança aprimorada.</p>
+                        <h3>Integração com Sistemas de Segurança</h3>
+                        <p>Integração do controle de acesso com câmeras de vigilância e alarmes para um sistema de segurança robusto e eficiente.</p>
                     </div>
                     <div class="service-card">
-                        <h3>Automação Residencial</h3>
-                        <p>Integração de segurança com automação residencial.</p>
+                        <h3>Relatórios de Acesso</h3>
+                        <p>Geração de relatórios detalhados sobre o acesso às instalações, ajudando na gestão da segurança e na análise de incidentes.</p>
                     </div>
                 </div>
             </div>
@@ -60,8 +58,8 @@
     
         <section id="contato" class="contact-section">
             <div class="container">
-                <h2>Contato</h2>
-                <p>Entre em contato conosco para mais informações sobre nossos serviços.</p>
+                <h2>Entre em Contato</h2>
+                <p>Estamos prontos para ajudá-lo a proteger seu espaço. Entre em contato conosco para mais informações sobre nossos serviços de controle de acesso.</p>
                 <form>
                     <input type="text" placeholder="Seu Nome" required>
                     <input type="email" placeholder="Seu Email" required>
@@ -71,6 +69,17 @@
             </div>
         </section>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navArea = document.querySelector('.nav-area');
+
+            menuToggle.addEventListener('click', function () {
+                navArea.classList.toggle('show'); // Adiciona ou remove a classe 'show'
+            });
+        });
+    </script>
     
 </body>
 </html>
